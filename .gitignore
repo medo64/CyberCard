@@ -1,0 +1,5 @@
+syntax: glob
+
+Hardware/Datasheets/**
+Research/**
+Releases/**
