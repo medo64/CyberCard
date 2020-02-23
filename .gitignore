@@ -1,5 +1,5 @@
 syntax: glob
 
-Hardware/Datasheets/**
 Research/**
-Releases/**
+Hardware/Datasheets/**
+Hardware/Releases/**

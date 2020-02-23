@@ -14,7 +14,7 @@ Current: 100 mA
 |  4 | C 100nF 25V X7R (0805)                    | C1-C4   | 399-1170-1-ND              |
 |  3 | C 470nF 25V X7R (0805)                    | C5-C7   | 1276-6480-1-ND             |
 |  2 | DS LED (0805)                             | DS1-DS2 | 475-1415-1-ND              |
-|  1 | J USB B, horizontal                       | J1      | ED2982-ND                  |
+|  1 | J USB B, horizontal                       | J1      | ED2983-ND                  |
 |  1 | J Header (4w)                             | J2      | S9016E-04-ND               |
 |  1 | L Ferrite 40Ohm (0805)                    | L1      | 445-2201-1-ND              |
 |  5 | R 1K 0.125W (0805)                        | R1-R5   | RMCF0805FT1K00CT-ND        |
