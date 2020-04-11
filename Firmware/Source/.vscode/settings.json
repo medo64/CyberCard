@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        ".vscode/": true,
+        "build": true,
+        "debug": true,
+        "dist": true,
+        "nbproject": true,
+        "Makefile": true
+    }
+}
