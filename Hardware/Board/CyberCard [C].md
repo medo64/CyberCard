@@ -14,7 +14,7 @@ Current: 100 mA
 |  4 | C 100nF 25V X7R (0805)                    | C1-C4   | 399-1170-1-ND       |
 |  3 | C 470nF 25V X7R (0805)                    | C5-C7   | 1276-6480-1-ND      |
 |  2 | DS LED (0805)                             | DS1-DS2 | 475-1415-1-ND       |
-|  1 | F 100mA 15V (0805)                        | F1      | 507-1810-1-ND       |
+|  1 | F 50mA 60V (1206)                         | F1      | 507-1793-1-ND       |
 |  1 | J USB B, horizontal                       | J1      | ED2983-ND           |
 |  1 | L Ferrite 1A 40Ohm (0805)                 | L1      | 445-2201-1-ND       |
 |  3 | R 3.3K 0.125W (0805)                      | R1-R2   | RMCF0805FT3K30CT-ND |
