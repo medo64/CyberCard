@@ -58,7 +58,11 @@ build: .build-post
 
 .build-post: .build-impl
 # Add your post 'build' code here...
-
+ifeq ($(OS),Windows_NT)
+	update-serial.cmd
+else
+	./update-serial.sh
+endif
 
 # clean
 clean: .clean-post

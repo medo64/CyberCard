@@ -269,9 +269,9 @@ const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[13];}sd002={
     }};
 
 //Serial string descriptor
-const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[12];}sd003={
+const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[13];}sd003 __at(0x1F00)={
     sizeof(sd003),USB_DESCRIPTOR_STRING, {
-        '1','9','7','9','0','1','2','8','1','8','1','5'
+        '1','9','7','9','0','1','2','8','1','8','1','5','0'
     }};
 
 //Array of configuration descriptors
