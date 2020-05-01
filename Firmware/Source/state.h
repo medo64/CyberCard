@@ -3,14 +3,14 @@
 
 
 // UART receive ring buffer
-#define UART_READ_BUFFER_MAX  32
+#define UART_READ_BUFFER_MAX  240
 uint8_t UartReadBuffer[UART_READ_BUFFER_MAX];
 uint8_t UartReadBufferStart = 0;
 uint8_t UartReadBufferEnd = 0;
 uint8_t UartReadBufferCount = 0;
 
 // UART transmit ring buffer
-#define UART_WRITE_BUFFER_MAX  192
+#define UART_WRITE_BUFFER_MAX  240
 uint8_t UartWriteBuffer[UART_WRITE_BUFFER_MAX];
 uint8_t UartWriteBufferStart = 0;
 uint8_t UartWriteBufferEnd = 0;
