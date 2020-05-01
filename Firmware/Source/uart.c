@@ -12,7 +12,7 @@ void uart_init() {
 }
 
 void uart_setup(uint32_t desiredBaudRate) {
-    SPBRG = (uint16_t)(_XTAL_FREQ / desiredBaudRate / 64 - 1);
+    SPBRG = (uint16_t)((_XTAL_FREQ * 10 / desiredBaudRate / 4 - 5) / 10);
     BRG16 = 1; //16-bit
     BRGH  = 1; //high speed
     SYNC  = 0; //asynchronous mode
