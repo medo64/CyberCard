@@ -4,10 +4,10 @@
 #include <xc.h>
 
 
-#define io_led_on()              TRISA5 = 0
-#define io_led_off()             TRISA5 = 1
+#define io_activity_led_on()   LATA4 = 1
+#define io_activity_led_off()  LATA4 = 0
 
-#define io_led_default()         TRISA5 = 0
-#define io_led_active()          TRISA5 = 1
+void io_init(void);
+void io_splash(void);
 
 #endif
