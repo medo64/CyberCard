@@ -1,6 +1,17 @@
-### CyberCard ###
+[CyberCard](https://medo64.com/cybercard/)
+==========================================
 
-Allows for direct serial communication with CyberPower OR500LCDRM1U.
+This USB device will show up on your system as a serial device and allow for a
+direct serial communication with CyberPower UPS devices that has support for
+RMCARD205 interface.
+
+It was inspired with [Jeff Mayes Serial Interface](https://www.jmayes.com/cyberpower-backup-serial-protocol-and-interface/)
+and wouldn't be possible without his extensive research.
+
+Tested devices:
+* OR500LCDRM1U
+* OR700LCDRM1U
+
 
 ---
 
