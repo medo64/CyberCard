@@ -1,6 +1,8 @@
 [CyberCard](https://medo64.com/cybercard/)
 ==========================================
 
+<img src="Image.png" float="left" align="right" />
+
 This USB device will show up on your system as a serial device and allow for a
 fully isolated serial communication with CyberPower UPS devices that have support
 for RMCARD202/RMCARD205 interface.
