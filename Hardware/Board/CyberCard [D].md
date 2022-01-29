@@ -17,7 +17,7 @@
 |       |      Dimensions | Area    | Thickness |
 |-------|-----------------|---------|-----------|
 | PCB   |  75.0 x 42.5 mm | 5.0 in² |    1.6 mm |
-| Panel |  54.0 x 36.2 mm | 3.1 in² |    1.6 mm |
+| Panel |  54.0 x 36.5 mm | 3.1 in² |    1.6 mm |
 
 
 #### TTL UART Board ####
@@ -36,7 +36,7 @@ is preferred, the device should work with 3.3V TTL cable too.
 
 A dab of hot glue is suggested on the connection to prevent accidental unplug.
 
-On a computer side, serial port should be accessed using the following serial
+On the computer side, serial port should be accessed using the following serial
 port parameters: 2400,8,N,1.
 
 
