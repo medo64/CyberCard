@@ -50,8 +50,8 @@ This command will change buzzer status on/off.
 
 | Send           | Response (example) | Description                            |
 |----------------|--------------------|----------------------------------------|
-| `C7:0<CR>`     | `#0<CR`            | Buzzer is set to off                   |
-| `C7:1<CR>`     | `#0<CR`            | Buzzer is set to on                    |
+| `C7:0<CR>`     | `#0<CR>`           | Buzzer is set to off                   |
+| `C7:1<CR>`     | `#0<CR>`           | Buzzer is set to on                    |
 
 
 ### Model Information
@@ -64,9 +64,9 @@ These commands will output UPS model information.
 | `P2<CR>`       | `#0700,0400,120,057,063<CR>`                            | Power(VA), Power(W), Voltage(nominal), Frequency(min), Frequency(max) |
 | `P3<CR>`       | `#06.0,2x1,009.0,00<CR>`                                | BatteryVoltage(nominal), Battery(layout), BatteryVA(nominal), Unknown |
 | `P4<CR>`       | `#OR700LCDRM1U,BFE7103_8S1,000000000000,CyberPower<CR>` | Product name, Firmware, SerialNumber, Manufacturer                    |
-| `P5<CR>`       | `#120`                                                  | Voltage(nominal)                                                      |
-| `P6<CR>`       | `#140`                                                  | Voltage(max)                                                          |
-| `P7<CR>`       | `#90`                                                   | Voltage(min)                                                          |
+| `P5<CR>`       | `#120<CR>`                                              | Voltage(nominal)                                                      |
+| `P6<CR>`       | `#140<CR>`                                              | Voltage(max)                                                          |
+| `P7<CR>`       | `#90<CR>`                                               | Voltage(min)                                                          |
 | `P8<CR>`       | `#10,20,30,40,50,60,70,80,90<CR>`                       | Unknown                                                               |
 | `P9<CR>`       | `#<0xC3><0x87><0xE0><CR>`                               | Unknown                                                               |
 
