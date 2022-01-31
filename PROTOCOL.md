@@ -37,6 +37,7 @@ The following are known status bits.
 |    1 |   3 | Shutdown pending     |
 |    1 |   4 | Test in progress     |
 |    1 |   5 | Currently beeping    |
+|    1 |   6 | Battery capacity low |
 |    1 |   7 | Battery in-use       |
 |    2 |   4 | External power on    |
 |    3 |   5 | Battery charging     |
