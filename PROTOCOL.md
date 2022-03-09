@@ -33,8 +33,8 @@ The following are known status bits.
 
 | Byte | Bit | Meaning (0:no 1:yes) |
 |-----:|----:|----------------------|
-|    1 |   2 | Power-up pending     |
-|    1 |   3 | Shutdown pending     |
+|    1 |   2 | Power-on pending     |
+|    1 |   3 | Power-off pending    |
 |    1 |   4 | Test in progress     |
 |    1 |   5 | Currently beeping    |
 |    1 |   6 | Battery capacity low |
@@ -42,7 +42,7 @@ The following are known status bits.
 |    2 |   4 | External power on    |
 |    3 |   5 | Battery charging     |
 |    3 |   7 | Battery full         |
-|    5 |   7 | Shutdown             |
+|    5 |   7 | Powered off          |
 
 
 ### Buzzer
@@ -76,14 +76,14 @@ These commands will output UPS model information.
 
 These commands will control UPS power state.
 
-| Send               | Response | Description                                                  |
-|--------------------|----------|--------------------------------------------------------------|
-| `S<CR>`            | `#0<CR>` | Immediate shutdown                                           |
-| `S(NN)<CR>`        | `#0<CR>` | Shutdown after `(NN)` minutes                                |
-| `S00R0000<CR>`     | `#0<CR>` | Immediate reboot                                             |
-| `S(NN)R(MMMM)<CR>` | `#0<CR>` | Shutdown after `(NN)` minutes, reboot after `(MMMM)` minutes |
-| `W<CR>`            | `#0<CR>` | Power on                                                     |
-| `C<CR>`            | `#0<CR>` | Cancel shutdown                                              |
+| Send               | Response | Description                                                     |
+|--------------------|----------|-----------------------------------------------------------------|
+| `S<CR>`            | `#0<CR>` | Immediate power off                                             |
+| `S(NN)<CR>`        | `#0<CR>` | Power off after `(NN)` minutes                                  |
+| `S00R0000<CR>`     | `#0<CR>` | Immediate power off followed by power on                        |
+| `S(NN)R(MMMM)<CR>` | `#0<CR>` | Power off after `(NN)` minutes, power on after `(MMMM)` minutes |
+| `W<CR>`            | `#0<CR>` | Power on                                                        |
+| `C<CR>`            | `#0<CR>` | Cancel power off                                                |
 
 
 ## Battery Test
