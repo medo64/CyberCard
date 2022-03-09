@@ -24,12 +24,12 @@ void main(void) {
     USBDeviceInit();
     USBDeviceAttach();
 
-    io_activity_led_off();
+    io_activity_led_on();
 
     while(true) {
         if (LedTimeout != LED_TIMEOUT_NONE) {
             if (LedTimeout == 0) {
-                io_activity_led_off();
+                io_activity_led_on();
                 LedTimeout = LED_TIMEOUT_NONE;
             } else {
                 LedTimeout--;
@@ -42,7 +42,7 @@ void main(void) {
 
         // UART receive
         while ((UartReadBufferCount < UART_READ_BUFFER_MAX) && uart_tryReadByte(&UartReadBuffer[UartReadBufferEnd])) {
-            io_activity_led_on();
+            io_activity_led_off();
             LedTimeout = LED_TIMEOUT;
 
             UartReadBufferEnd = (UartReadBufferEnd + 1) % UART_READ_BUFFER_MAX;
@@ -51,7 +51,7 @@ void main(void) {
 
         // UART send
         if ((UartWriteBufferCount > 0) && uart_tryWriteByte(UartWriteBuffer[UartWriteBufferStart])) {
-            io_activity_led_on();
+            io_activity_led_off();
             LedTimeout = LED_TIMEOUT;
 
             UartWriteBufferStart = (UartWriteBufferStart + 1) % UART_WRITE_BUFFER_MAX;
@@ -61,7 +61,7 @@ void main(void) {
         // USB receive
         uint8_t usbCount = getsUSBUSART(UsbReadBuffer, USB_READ_BUFFER_MAX); //until the buffer is free.
         if (usbCount > 0) {
-            io_activity_led_on();
+            io_activity_led_off();
             LedTimeout = LED_TIMEOUT;
 
             //copy buffer
@@ -76,7 +76,7 @@ void main(void) {
 
         // USB send
         if(UartReadBufferCount > 0) {
-            io_activity_led_on();
+            io_activity_led_off();
             LedTimeout = LED_TIMEOUT;
 
             uint8_t usbCount = 0;

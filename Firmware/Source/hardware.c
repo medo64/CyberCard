@@ -23,5 +23,5 @@ void init(void) {
 }
 
 void wait_short(void) {
-    __delay_ms(150);
+    __delay_ms(100);
 }
