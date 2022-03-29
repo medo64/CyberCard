@@ -6,7 +6,8 @@
 |  1 | C 470nF X7R 16V (0805)                    | C4-C5   | 1276-1074-1-ND              | 1276-1199-1-ND              |
 |  2 | DS LED (0805)                             | DS1-DS2 | 475-1278-1-ND               | L171L-LWC-TR                |
 |  1 | J USB B, horizontal                       | J1      | ED2982-ND                   | ED2983-ND                   |
-|  7 | R 1.0K 0.125W (0805)                      | R1-R6   | RMCF0805FT1K00CT-ND         | RMCF0805JT1K00CT-ND         |
+|  3 | R 1.0K 0.125W (0805)                      | R1-R3   | RMCF0805FT1K00CT-ND         | RMCF0805JT1K00CT-ND         |
+|  3 | R 2.2K 0.125W (0805)                      | R4-R6   | RMCF0805FT3K30CT-ND         | RMCF0805JT3K30CT-ND         |
 |  1 | U MCP2221A-I/SL (SOIC-14)                 | U1      | MCP2221A-I/SL               | MCP2221-I/SL-ND             |
 |  2 | U PC817C (SMD-4)                          | U2-U3   | 732-140817143200CT-ND       | ISP817CXSMCT-ND             |
 
